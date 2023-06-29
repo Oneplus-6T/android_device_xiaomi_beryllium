@@ -103,3 +103,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # WiFi
 PRODUCT_PACKAGES += \
     TargetWifiOverlay
+
+# Call MiCam setup
+$(call inherit-product, vendor/miuicamera/config.mk)
