@@ -1,19 +1,27 @@
 #
-# Copyright (C) 2018-2022 The LineageOS Project
+# Copyright (C) Project-Zephyrus
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Inherit from beryllium device
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Zeph Stuff
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_USES_BLUR := false
+CUSTOM_BUILD_TYPE := Official
+SHIP_APERTURE := false
+TARGET_USES_MIUI_CAMERA := true
+
+# GMS
+WITH_GMS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_beryllium
+PRODUCT_NAME := beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := POCO F1
+PRODUCT_MODEL := Pocophone F1
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_SYSTEM_NAME := beryllium
