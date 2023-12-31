@@ -17,3 +17,6 @@ git clone --depth=1 https://github.com/Legendleo90/kernel_xiaomi_beryllium.git k
 # Miui Camera
 rm -rf vendor/miuicamera
 git clone https://github.com/Legendleo90/vendor_miuicamera.git vendor/miuicamera
+
+# Removals
+rm -rf hardware/qcom-caf/bengal/display
