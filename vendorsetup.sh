@@ -12,7 +12,7 @@ git clone --depth=1 https://github.com/Oneplus-6T/proprietary_vendor_xiaomi_sdm8
 
 # Kernel Tree
 rm -rf kernel/xiaomi/sdm845
-git clone --depth=1 https://github.com/Legendleo90/kernel_xiaomi_beryllium.git kernel/xiaomi/sdm845
+git clone -b fourteen-KSU --depth=1 https://github.com/Legendleo90/kernel_xiaomi_beryllium.git kernel/xiaomi/sdm845
 
 # Miui Camera
 rm -rf vendor/miuicamera
@@ -24,3 +24,7 @@ git clone -b lineage-21 https://github.com/LineageOS/android_hardware_xiaomi har
 
 # Removals
 rm -rf hardware/qcom-caf/bengal/display
+
+# Bash KernelSU
+cd k*/x*/s* && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash - && cd ../../..
+
