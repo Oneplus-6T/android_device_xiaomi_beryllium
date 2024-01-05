@@ -20,3 +20,7 @@ git clone https://github.com/Legendleo90/vendor_miuicamera.git vendor/miuicamera
 
 # Bash KernelSU
 cd k*/x*/s* && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash - && cd ../../..
+
+# Customs
+rm -rf frameworks/base
+git clone https://github.com/Legendleo90/frameworks_base.git frameworks/base
